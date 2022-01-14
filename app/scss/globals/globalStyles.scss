@@ -2,6 +2,10 @@
 
 // Sizes of fonts globally
 
+*::selection {
+  background: var(--secondary-color);
+}
+
 @include breakpoint-down(medium) {
   html {
     font-size: 12px;
