@@ -1,0 +1,20 @@
+@mixin blob($sideSize, $color) {
+  position: absolute;
+  left: -5%;
+  top: -5%;
+  z-index: -1;
+  content: "";
+
+  width: $sideSize;
+  height: $sideSize;
+  border-radius: 100%;
+  background: $color;
+
+  animation: flickering 900ms ease-in-out infinite alternate;
+}
+
+@keyframes flickering {
+  100% {
+    transform: scale(1.5);
+  }
+}
