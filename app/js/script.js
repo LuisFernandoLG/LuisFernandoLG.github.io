@@ -44,11 +44,11 @@ const loadProyects = () => {
 
   let $proyectsLoaded = "";
   proyects.forEach(({ link, name, id, thumbail }) => {
-    $proyectsLoaded += `<li class="proyects__proyect">
-	  <a href="${link}" target="_blank">
+    $proyectsLoaded += `<a href="${link}" target="_blank" class="proyects__proyect" >
 		<img src="${thumbail}" alt="${name}" />
-	  </a>
-	</li>`;
+    <span className="github_link">Github</span>
+    </a>
+`;
   });
 
   $proyectsContainer.innerHTML = $proyectsLoaded;

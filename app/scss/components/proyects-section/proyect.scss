@@ -1,24 +1,23 @@
 @use "../../util/" as *;
 
 .proyects__proyect {
+  position: relative;
   background: var(--tertiary-color);
   border-radius: 10px;
-  overflow: hidden;
+  padding: 2rem 2.5rem;
+  cursor: pointer;
 
   aspect-ratio: 16/9;
 
-  img {
-    transition: padding 200ms ease;
+  &:hover > img {
+    transform: scale(1.08);
+  }
 
+  img {
     width: 100%;
     height: 100%;
-    padding: 2rem;
-
-    cursor: pointer;
-
-    &:hover {
-      padding: 1.5rem;
-    }
+    border-radius: 10px;
+    transition: transform 200ms ease;
   }
 
   @include breakpoint-down(small) {
