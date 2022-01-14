@@ -1,7 +1,12 @@
+@use "../../util/" as *;
 .proyects {
-  max-width: 62.5rem;
+  max-width: 80%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   gap: 2rem;
+
+  @include breakpoint-down(small) {
+    max-width: 100%;
+  }
 }
