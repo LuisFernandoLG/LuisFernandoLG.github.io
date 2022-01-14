@@ -3,7 +3,7 @@
 @forward "proyect";
 
 .proyects-section {
-  padding: 4rem 0;
+  margin: var(--margin-section) 0;
   display: flex;
   flex-direction: column;
   align-items: center;
