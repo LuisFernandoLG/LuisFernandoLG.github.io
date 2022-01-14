@@ -46,7 +46,6 @@ const loadProyects = () => {
   proyects.forEach(({ link, name, id, thumbail }) => {
     $proyectsLoaded += `<a href="${link}" target="_blank" class="proyects__proyect" >
 		<img src="${thumbail}" alt="${name}" />
-    <span className="github_link">Github</span>
     </a>
 `;
   });
