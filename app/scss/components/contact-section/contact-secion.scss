@@ -1,0 +1,16 @@
+@forward "form-section";
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+
+  margin: var(--margin-section) 0;
+
+  &__title {
+    font-weight: var(--font-bold);
+    font-size: var(--title-size);
+  }
+}
