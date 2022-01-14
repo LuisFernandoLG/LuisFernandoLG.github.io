@@ -1,25 +1,23 @@
 @use "../../util/" as *;
 
 .proyects__proyect {
-  padding: 3rem;
   background: var(--tertiary-color);
   border-radius: 10px;
   overflow: hidden;
-  cursor: pointer;
 
-  transition: background 200ms ease, transform 200ms ease, padding 200ms ease;
   aspect-ratio: 16/9;
 
   img {
-    aspect-ratio: 16/9;
-    border-radius: 10px;
+    transition: padding 200ms ease;
+
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    box-shadow: 0 0 40px -25px var(--font-color);
-  }
+    padding: 3rem;
 
-  &:hover {
-    padding: 1.5rem;
+    cursor: pointer;
+
+    &:hover {
+      padding: 1.5rem;
+    }
   }
 }
