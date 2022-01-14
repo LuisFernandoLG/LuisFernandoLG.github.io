@@ -1,2 +1,3 @@
 node_modules/
-dist/
+dist/script.js.map
+dist/style.css.map
