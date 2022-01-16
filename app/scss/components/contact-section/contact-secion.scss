@@ -1,3 +1,4 @@
+@use "../../util/" as *;
 @forward "form-section";
 
 .contact-section {
@@ -12,5 +13,12 @@
   &__title {
     font-weight: var(--font-bold);
     font-size: var(--title-size);
+    display: block;
+    position: relative;
+    z-index: 10;
+
+    &::before {
+      @include blob(1.875rem, var(--secondary-color));
+    }
   }
 }
