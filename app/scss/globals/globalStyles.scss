@@ -6,6 +6,11 @@
   background: var(--secondary-color);
 }
 
+// Smooth scroll
+html {
+  scroll-behavior: smooth;
+}
+
 @include breakpoint-down(medium) {
   html {
     font-size: 12px;
