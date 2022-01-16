@@ -19,7 +19,7 @@
     color: var(--disabled-color);
     line-height: 1.5rem;
 
-    margin: 1rem 0;
+    margin: 2rem 0;
 
     &-bold {
       font-weight: var(--font-extra-bold);
@@ -35,7 +35,6 @@
 
   &__contact-btn {
     @include primaryButton;
-
     // Responsive
     @include breakpoint-down(medium) {
       margin: 0 auto;
