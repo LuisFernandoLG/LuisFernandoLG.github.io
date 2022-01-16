@@ -1,3 +1,5 @@
+@use "../../util/" as *;
+
 .contact-form {
   width: 100%;
   max-width: 700px;
@@ -76,12 +78,6 @@
   }
 
   &__submit-btn {
-    padding: 1rem 2rem;
-    background: var(--primary-color);
-    border: none;
-    cursor: pointer;
-    border-radius: 1rem;
-    color: var(--tertiary-color);
-    font-weight: var(--font-bold);
+    @include primaryButton;
   }
 }
