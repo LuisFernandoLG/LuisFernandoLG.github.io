@@ -30,7 +30,7 @@ class Modal {
   }
 
   setImg(imgUrl) {
-    this.$title.src = imgUrl;
+    this.$img.src = imgUrl;
   }
 
   buildModal(title, content, imgUrl) {
@@ -53,12 +53,10 @@ class Modal {
 
 // Modal
 const $modalContainer = document.querySelector(".modal-container");
-const $modalImg = document.querySelector(".modal__img");
+const $modalImg = document.querySelector(".modal__img img");
 const $modalTitle = document.querySelector(".modal__title");
 const $modalContent = document.querySelector(".modal__content");
 const $modalBtn = document.querySelector(".modal__btn");
-
-const imgEmailUrl = "./dist/assets/img/email.svg";
 
 const modal = new Modal(
   $modalContainer,
@@ -123,39 +121,35 @@ const loadProyects = () => {
   $proyectsContainer.innerHTML = $proyectsLoaded;
 };
 
-const sendData = (form) => {
-  const email = "luislopez1099lg@gmail.com";
-  const url = `https://formsubmit.co/ajax/${email}`;
-  const headers = {
-    "Content-Type": "application/json",
-    Accept: "application/json",
-  };
-  const body = JSON.stringify(form);
+const sendData = (form) =>
+  new Promise((resolve, reject) => {
+    const email = "luislopez1099lg@gmail.com";
+    const url = `https://formsubmit.co/ajax/${email}`;
+    const headers = {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    };
+    const body = JSON.stringify(form);
 
-  fetch(url, {
-    method: "POST",
-    headers,
-    body,
-  })
-    .then((response) => {
-      return response.ok
-        ? response.json()
-        : new Promise.reject("Oops! There was an error :(");
+    fetch(url, {
+      method: "POST",
+      headers,
+      body,
     })
-    .then((data) => {
-      data.success === "true";
-      console.log(data);
-      // Show modal
-      modal.openModal(
-        "¡Mensaje envíado!",
-        "Tu mensaje fue recibido, gracias",
-        imgEmailUrl
-      );
-    })
-    .catch((error) => {
-      console.log(error);
-    });
-};
+      .then((response) => {
+        return response.ok
+          ? response.json()
+          : new Promise.reject("Oops! There was an error :(");
+      })
+      .then((data) => {
+        data.success === "true";
+        resolve(true);
+      })
+      .catch((error) => {
+        console.log(error);
+        reject(false);
+      });
+  });
 
 const loadEmailSender = () => {
   const $form = document.querySelector(".contact-form");
@@ -167,7 +161,22 @@ const loadEmailSender = () => {
       email: $form.email.value,
       message: $form.content.value,
     };
-    sendData(data);
+    sendData(data)
+      .then(() => {
+        modal.openModal(
+          "¡Mensaje envíado!",
+          "Tu mensaje fue recibido, gracias",
+          "./dist/assets/img/email.svg"
+        );
+        $form.reset();
+      })
+      .catch(() => {
+        modal.openModal(
+          "¡Hubo un error!",
+          "Qué pasó!",
+          "./dist/assets/img/sadface.svg"
+        );
+      });
   });
 };
 
