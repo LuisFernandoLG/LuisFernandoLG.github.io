@@ -26,6 +26,20 @@
   </head>
   <body>
     <div class="app-container">
+      <div class="modal-container">
+        <div class="modal">
+          <div class="modal__img">
+            <img src="./dist/assets/img/email.svg" alt="email" />
+          </div>
+          <h2 class="modal__title">Envíado!</h2>
+          <p class="modal__content">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi aut
+            accusantium itaque est magni amet autem praesentium alias aperiam
+            voluptate!
+          </p>
+          <button class="modal__btn">Cerrar</button>
+        </div>
+      </div>
       <header class="header">
         <div class="logo">
           <h2 class="logo__img">LF</h2>
@@ -65,7 +79,7 @@
         <form class="contact-form">
           <div class="contact-form__input-wrapper">
             <input
-              class="input"
+              class="input input-name"
               type="text"
               name="name"
               placeholder=" "
@@ -75,7 +89,7 @@
           </div>
           <div class="contact-form__input-wrapper">
             <input
-              class="input"
+              class="input input-email"
               type="email"
               name="email"
               placeholder=" "
@@ -86,12 +100,12 @@
           <div class="contact-form__input-wrapper textarea-wrapper">
             <textarea
               required
-              class="input"
+              class="input input-content"
               type="text"
               name="content"
               placeholder=" "
             ></textarea>
-            <label for="content">Name</label>
+            <label for="content">Message</label>
           </div>
 
           <input
