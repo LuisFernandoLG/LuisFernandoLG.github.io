@@ -113,7 +113,7 @@ const loadProyects = () => {
   let $proyectsLoaded = "";
   proyects.forEach(({ link, name, id, thumbail }) => {
     $proyectsLoaded += `<a href="${link}" target="_blank" class="proyects__proyect" >
-		<img src="${thumbail}" alt="${name}" />
+		<img src="${thumbail}" alt="${name}" loading="lazy"/>
     </a>
 `;
   });
