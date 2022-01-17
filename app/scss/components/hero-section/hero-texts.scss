@@ -7,13 +7,18 @@
     color: var(--font-color);
     line-height: 7rem;
 
+    transform: translateX(-6px);
+
+    // background-color: red;
     // Responsive
     @include breakpoint-down(medium) {
       text-align: center;
+      transform: translateX(0);
     }
   }
 
   &__description {
+    // background-color: green;
     font-size: 1.5rem;
     font-weight: var(--font-medium);
     color: var(--disabled-color);
