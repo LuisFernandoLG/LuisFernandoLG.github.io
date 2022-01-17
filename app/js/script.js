@@ -146,16 +146,19 @@ const sendData = (form) =>
         resolve(true);
       })
       .catch((error) => {
-        console.log(error);
         reject(false);
       });
   });
 
 const loadEmailSender = () => {
   const $form = document.querySelector(".contact-form");
+  const $submitBtn = $form.submit_btn;
 
   $form.addEventListener("submit", (e) => {
     e.preventDefault();
+
+    $submitBtn.value = "Sending...";
+
     const data = {
       name: $form.name.value,
       email: $form.email.value,
@@ -176,6 +179,9 @@ const loadEmailSender = () => {
           "Qué pasó!",
           "./dist/assets/img/sadface.svg"
         );
+      })
+      .finally(() => {
+        $submitBtn.value = "Submit";
       });
   });
 };
