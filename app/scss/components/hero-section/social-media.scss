@@ -18,14 +18,24 @@
 
     &:hover {
       background: var(--primary-color);
+      p {
+        color: var(--tertiary-color);
+      }
+      svg {
+        path {
+          fill: var(--tertiary-color);
+        }
+      }
     }
 
     p {
       color: var(--secondary-color);
       font-weight: var(--font-bold);
+      transition: color 300ms ease;
     }
     svg {
       path {
+        transition: fill 300ms ease;
         fill: var(--secondary-color);
       }
     }
