@@ -1,0 +1,38 @@
+@use "../../util/" as *;
+
+.social-media {
+  display: flex;
+  gap: 1.5rem;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    padding: 0.5rem 1rem;
+    border: 0.1875rem solid var(--secondary-color);
+    border-radius: 10px;
+
+    transition: background 300ms ease;
+
+    &:hover {
+      background: var(--primary-color);
+    }
+
+    p {
+      color: var(--secondary-color);
+      font-weight: var(--font-bold);
+    }
+    svg {
+      path {
+        fill: var(--secondary-color);
+      }
+    }
+  }
+
+  @include breakpoint-down(medium) {
+    justify-content: center;
+    align-items: center;
+  }
+}

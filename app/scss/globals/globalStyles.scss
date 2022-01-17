@@ -17,6 +17,12 @@ html {
   }
 }
 
+li,
+ul,
+ol {
+  list-style: none;
+}
+
 :root {
   --margin-section: 5rem;
 }
