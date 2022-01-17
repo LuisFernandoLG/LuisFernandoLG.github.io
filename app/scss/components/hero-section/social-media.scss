@@ -29,6 +29,7 @@
     }
 
     p {
+      font-size: var(--body-size);
       color: var(--secondary-color);
       font-weight: var(--font-bold);
       transition: color 300ms ease;
