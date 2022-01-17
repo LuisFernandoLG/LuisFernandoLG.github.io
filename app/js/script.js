@@ -167,16 +167,16 @@ const loadEmailSender = () => {
     sendData(data)
       .then(() => {
         modal.openModal(
-          "¡Mensaje envíado!",
-          "Tu mensaje fue recibido, gracias",
+          "Sent!",
+          "your message was sent successfully",
           "./dist/assets/img/email.svg"
         );
         $form.reset();
       })
       .catch(() => {
         modal.openModal(
-          "¡Hubo un error!",
-          "Qué pasó!",
+          "Error!",
+          "There was an error :(",
           "./dist/assets/img/sadface.svg"
         );
       })
