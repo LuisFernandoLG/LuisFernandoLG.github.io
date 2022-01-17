@@ -1,18 +1,23 @@
 :root {
-  --photo-size: 20rem;
+  --photo-size: 23rem;
+  --blob-border-radius: 59% 41% 46% 54% / 36% 49% 51% 64%;
 }
 
 .hero-photo {
   width: var(--photo-size);
   height: var(--photo-size);
+  border-radius: var(--blob-border-radius);
 
-  outline: 1rem solid var(--primary-color);
-  border-radius: 10rem;
-  overflow: hidden;
+  padding: 0.6rem;
+  padding-top: 1rem;
+  background-color: var(--primary-color);
 
   img {
+    border-radius: var(--blob-border-radius);
     width: 100%;
+    height: 100%;
     object-fit: cover;
+    object-position: top;
     filter: grayscale(100%);
   }
 }
