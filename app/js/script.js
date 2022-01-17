@@ -102,7 +102,7 @@ const proyects = [
   {
     id: 6,
     name: "GSP Form",
-    link: "https://admiring-kalam-5cd446.netlify.app",
+    link: "https://gsp-app-form.netlify.app/",
     thumbail: "./dist/assets/img/proyects/gspform.png",
   },
 ];
