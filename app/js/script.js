@@ -75,6 +75,8 @@ const proyects = [
     link: "https://gspcabo.netlify.app/",
     thumbail: "./dist/assets/img/proyects/gspcabo.png",
     miniVideo: "./dist/assets/videos/gsplanding.mp4",
+    description:
+      "Landing page developed for promoting the scholarship program.",
   },
   {
     id: 2,
@@ -82,6 +84,7 @@ const proyects = [
     link: "https://admiring-kalam-5cd446.netlify.app",
     thumbail: "./dist/assets/img/proyects/emojiapp.png",
     miniVideo: "./dist/assets/videos/emojiapp.mp4",
+    description: "Web app that shows floating emojis in every click.",
   },
   {
     id: 3,
@@ -89,6 +92,7 @@ const proyects = [
     link: "https://typing-applg.netlify.app",
     thumbail: "./dist/assets/img/proyects/typeandtype.png",
     miniVideo: "./dist/assets/videos/typeandtype.mp4",
+    description: "Web app that helps you to improve your typing skills.",
   },
   {
     id: 4,
@@ -96,6 +100,8 @@ const proyects = [
     link: "https://planet-factss.netlify.app",
     thumbail: "./dist/assets/img/proyects/planetsSite.png",
     miniVideo: "./dist/assets/videos/planets.mp4",
+    description:
+      "Web app that shows you how the planets look, giving information about their geology and internal structure.",
   },
 
   {
@@ -104,6 +110,7 @@ const proyects = [
     link: "https://lista-enlazada.netlify.app",
     thumbail: "./dist/assets/img/proyects/linkedList.png",
     miniVideo: "./dist/assets/videos/linkedlist.mp4",
+    description: "Web app that shows you how a linked list works internally",
   },
 
   {
@@ -112,6 +119,8 @@ const proyects = [
     link: "https://gsp-app-form.netlify.app/",
     thumbail: "./dist/assets/img/proyects/gspform.png",
     miniVideo: "./dist/assets/videos/gspform.mp4",
+    description:
+      "web application for people who would like to apply for a scholarship in GSP",
   },
 ];
 
@@ -119,7 +128,7 @@ const loadProyects = () => {
   let $proyectsContainer = document.querySelector(".proyects");
 
   let $proyectsLoaded = "";
-  proyects.forEach(({ link, name, id, thumbail, miniVideo }) => {
+  proyects.forEach(({ link, name, id, description, miniVideo }) => {
     console.log(id);
     $proyectsContainer.innerHTML += `<a href="${link}" target="_blank" class="proyects__proyect">
     <video class="video-${id} " muted> 
@@ -127,8 +136,7 @@ const loadProyects = () => {
     </video>
     <div class="texts-content">
     <h3 class="title">${name}</h3>
-    <p clasS="description">
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis voluptatibus corrupti eius molestias iusto voluptates assumenda eum sint veniam consequuntur?</p>
+    <p clasS="description">${description}</p>
     </div>
     </a>
 `;
