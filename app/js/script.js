@@ -1,3 +1,5 @@
+const $ = (selector) => document.querySelector(selector);
+
 class Modal {
   constructor($container, $img, $title, $content, $button) {
     this.$container = $container;
@@ -72,24 +74,28 @@ const proyects = [
     name: "gsp cabo landing Page",
     link: "https://gspcabo.netlify.app/",
     thumbail: "./dist/assets/img/proyects/gspcabo.png",
+    miniVideo: "./dist/assets/videos/gsplanding.mp4",
   },
   {
     id: 2,
     name: "Emoji App",
     link: "https://admiring-kalam-5cd446.netlify.app",
     thumbail: "./dist/assets/img/proyects/emojiapp.png",
+    miniVideo: "./dist/assets/videos/emojiapp.mp4",
   },
   {
     id: 3,
     name: "Type And Type",
     link: "https://typing-applg.netlify.app",
     thumbail: "./dist/assets/img/proyects/typeandtype.png",
+    miniVideo: "./dist/assets/videos/typeandtype.mp4",
   },
   {
     id: 4,
     name: "Planet fact",
     link: "https://planet-factss.netlify.app",
     thumbail: "./dist/assets/img/proyects/planetsSite.png",
+    miniVideo: "./dist/assets/videos/planets.mp4",
   },
 
   {
@@ -97,6 +103,7 @@ const proyects = [
     name: "Linked List",
     link: "https://lista-enlazada.netlify.app",
     thumbail: "./dist/assets/img/proyects/linkedList.png",
+    miniVideo: "./dist/assets/videos/linkedlist.mp4",
   },
 
   {
@@ -104,6 +111,7 @@ const proyects = [
     name: "GSP Form",
     link: "https://gsp-app-form.netlify.app/",
     thumbail: "./dist/assets/img/proyects/gspform.png",
+    miniVideo: "./dist/assets/videos/gspform.mp4",
   },
 ];
 
@@ -111,14 +119,28 @@ const loadProyects = () => {
   let $proyectsContainer = document.querySelector(".proyects");
 
   let $proyectsLoaded = "";
-  proyects.forEach(({ link, name, id, thumbail }) => {
-    $proyectsLoaded += `<a href="${link}" target="_blank" class="proyects__proyect" >
-		<img src="${thumbail}" alt="${name}" loading="lazy"/>
+  proyects.forEach(({ link, name, id, thumbail, miniVideo }) => {
+    console.log(id);
+    $proyectsContainer.innerHTML += `<a href="${link}" target="_blank" class="proyects__proyect" >
+    <video class="video-${id}"> 
+      <source src="${miniVideo}" type="video/mp4">
+    </video>
     </a>
 `;
   });
+};
 
-  $proyectsContainer.innerHTML = $proyectsLoaded;
+const addHoverToVideo = () => {
+  proyects.forEach(({ id }) => {
+    $(`.video-${id}`).addEventListener("mouseenter", function (e) {
+      e.target.play();
+      e.target.loop = true;
+    });
+
+    $(`.video-${id}`).addEventListener("mouseleave", function (e) {
+      e.target.pause();
+    });
+  });
 };
 
 const sendData = (form) =>
@@ -189,4 +211,5 @@ const loadEmailSender = () => {
 window.addEventListener("DOMContentLoaded", (event) => {
   loadProyects();
   loadEmailSender();
+  addHoverToVideo();
 });
