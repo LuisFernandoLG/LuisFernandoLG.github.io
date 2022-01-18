@@ -14,10 +14,11 @@
     border: 0.1875rem solid var(--secondary-color);
     border-radius: 10px;
 
-    transition: background 300ms ease;
+    transition: background 300ms ease, box-shadow 300ms ease;
 
     &:hover {
       background: var(--primary-color);
+      box-shadow: 0 0.625rem 1.875rem -0.3125rem var(--secondary-color);
       p {
         color: var(--tertiary-color);
       }
