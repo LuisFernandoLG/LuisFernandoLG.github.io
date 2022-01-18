@@ -2,24 +2,59 @@
 
 .proyects__proyect {
   position: relative;
-  background: var(--tertiary-color);
-  border-radius: 10px;
-  padding: 2rem 2.5rem;
   cursor: pointer;
+  overflow: hidden;
 
-  aspect-ratio: 16/9;
+  background: var(--tertiary-color);
+  // border: 6px solid var(--secondary-color);
 
-  img,
+  border-radius: 10px;
+
+  padding: 2rem;
+
+  transition: background 300ms ease;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+
   video {
     width: 100%;
-    height: 100%;
+    height: auto;
     border-radius: 10px;
-    transition: transform 200ms ease, filter 300ms ease;
   }
 
-  &:hover > img {
-    transform: scale(1.08);
-    filter: grayscale(0%);
+  .texts-content {
+    padding: 2rem;
+
+    .title,
+    .description {
+      text-align: center;
+      color: var(--font-color);
+      transition: color 300ms ease;
+    }
+
+    .title {
+      font-size: var(--subtitle-size);
+      color: var(--secondary-color);
+    }
+
+    .description {
+      padding-top: 1rem;
+      font-size: var(--body-size);
+      line-height: var(--subtitle-size);
+    }
+  }
+
+  &:hover {
+    background: var(--primary-color);
+
+    .title,
+    .description {
+      color: var(--tertiary-color);
+    }
   }
 
   @include breakpoint-down(small) {

@@ -121,10 +121,15 @@ const loadProyects = () => {
   let $proyectsLoaded = "";
   proyects.forEach(({ link, name, id, thumbail, miniVideo }) => {
     console.log(id);
-    $proyectsContainer.innerHTML += `<a href="${link}" target="_blank" class="proyects__proyect" >
-    <video class="video-${id} muted="muted"> 
+    $proyectsContainer.innerHTML += `<a href="${link}" target="_blank" class="proyects__proyect">
+    <video class="video-${id} " muted> 
       <source src="${miniVideo}" type="video/mp4">
     </video>
+    <div class="texts-content">
+    <h3 class="title">${name}</h3>
+    <p clasS="description">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis voluptatibus corrupti eius molestias iusto voluptates assumenda eum sint veniam consequuntur?</p>
+    </div>
     </a>
 `;
   });
