@@ -129,7 +129,6 @@ const loadProyects = () => {
 
   let $proyectsLoaded = "";
   proyects.forEach(({ link, name, id, description, miniVideo }) => {
-    console.log(id);
     $proyectsContainer.innerHTML += `<a href="${link}" target="_blank" class="proyects__proyect">
     <video class="video-${id} " muted> 
       <source src="${miniVideo}" type="video/mp4">
