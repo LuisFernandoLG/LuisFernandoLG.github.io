@@ -4,7 +4,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 const projects = [
     {
-        src: "./src/assets/images/projects/practibus.png",
+        src: "./src/assets/images/projects/practibus.webp",
         title: "Practibus",
         description: "Practibus is an ecosystem of apps for bus for SJC. Driver , user and admin app. This is the user app.",
         url: "https://butterflymusicprogram.com/",
@@ -13,7 +13,7 @@ const projects = [
         inProcess: true
     },
     {
-        src: "./src/assets/images/projects/butterfly.jpeg",
+        src: "./src/assets/images/projects/butterfly.webp",
         title: "Butterfly Music Program",
         description: "Website developed for the Butterfly Music Program, a music school in the Cabo San Lucas.",
         url: "https://butterflymusicprogram.com/",
@@ -21,7 +21,7 @@ const projects = [
         color: "#673800",
     },
     {
-        src: "./src/assets/images/projects/gsp.jpeg",
+        src: "./src/assets/images/projects/gsp.webp",
         title: "GSP landing page",
         description: "Landing page developed for promoting the Green Scholarship Program.",
         url: "https://gspcabo.netlify.app/",
@@ -31,7 +31,7 @@ const projects = [
 
     
     {
-        src: "./src/assets/images/projects/linkedList.jpeg",
+        src: "./src/assets/images/projects/linkedList.webp",
         title: "Simple Linked List",
         description: "Linked List app developed for the Data Structures course in order to learn how it workds.",
         url: "https://lista-enlazada.netlify.app/",
@@ -42,7 +42,7 @@ const projects = [
     
     
     {
-        src: "./src/assets/images/projects/planets.jpeg",
+        src: "./src/assets/images/projects/planets.webp",
         title: "Planest Facts",
         description: "Web app developed for learning React and consuming an API.",
         url: "https://app.netlify.com/sites/planet-factss/",
@@ -51,7 +51,7 @@ const projects = [
     },
 
     {
-        src: "./src/assets/images/projects/emoji.jpeg",
+        src: "./src/assets/images/projects/emoji.webp",
         title: "Emoji app",
         description: "Web app developed for learning React and animations.",
         url: "https://admiring-kalam-5cd446.netlify.app/",
