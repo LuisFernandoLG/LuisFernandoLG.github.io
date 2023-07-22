@@ -7,11 +7,22 @@ const projects = [
         src: "./src/assets/images/projects/practibus.webp",
         title: "Practibus",
         description: "Practibus is an ecosystem of apps for bus for SJC. Driver , user and admin app. This is the user app.",
-        url: "https://butterflymusicprogram.com/",
+        url: "https://luis.lopez.live",
         tecnologies: ["React native", "Firebase", "MongoDB", "NodeJs"],
         color: "#186B82",
         inProcess: true
     },
+    
+    {
+        src: "./src/assets/images/projects/nativefloral.webp",
+        title: "Native Floral",
+        description: "A business of a floral designer. This is the desgin of the website.",
+        url: "https://luis.lopez.live",
+        tecnologies: ["Wordpress", "Figma", "CSS"],
+        color: "#676767",
+        inProcess: true
+    },
+
     {
         src: "./src/assets/images/projects/butterfly.webp",
         title: "Butterfly Music Program",
