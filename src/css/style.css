@@ -75,6 +75,8 @@ html{
     position: relative;
     padding: 2rem 0;
     height: 95vh;
+    min-height: 500px;
+    max-height: 800px;
     background-color: var(--tertiary-color);
 
     display: flex;
@@ -199,6 +201,7 @@ html{
         font-size: 3rem;
         font-weight: 800;
         color: var(--text-color);
+        text-decoration: underline;
     }
 
     & .projects-section__subtitle{
@@ -409,6 +412,7 @@ html{
     .introduce-section{
         padding: 2rem;
         flex-direction: column;
+        min-height: 750px;
         height: 90vh;
         flex-flow: column-reverse;
     
