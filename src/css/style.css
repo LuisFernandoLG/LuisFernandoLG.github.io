@@ -151,6 +151,23 @@ html{
     }
 }
 
+
+
+
+.photo-container{
+    border: 3px solid var(--text-color);
+    
+    & .photo-container__image{
+        width: 350px;
+        height: 500px;
+
+        pointer-events: none;
+        object-fit: contain;
+        filter: grayscale(100%) sepia(30%) hue-rotate(200deg);
+
+    }
+}
+
 .down-arrow{
     position: absolute;
     bottom: 0;
@@ -164,25 +181,10 @@ html{
 
 
 
-.photo-container{
-    /* border-radius: 10px; */
-    /* box-shadow: 10px 10px 30px -10px var(--primary-color); */
-    /* overflow: hidden; */
-    border: 3px solid var(--text-color);
-    
-    & .photo-container__image{
-        width: 350px;
-        height: 500px;
 
-        pointer-events: none;
-        object-fit: contain;
-        /* transform: scale(0.7); */
-        object-position: 20% 10%;
-        /* filter: saturate(0); */
-        filter: grayscale(100%) sepia(30%) hue-rotate(200deg);
 
-    }
-}
+
+
 
 .projects-section{
     padding-top: 4rem;
@@ -400,3 +402,84 @@ html{
         transform: rotate(360deg);
     }    
 }
+
+
+@media (max-width: 930px) {
+    /* … */
+    .introduce-section{
+        padding: 2rem;
+        flex-direction: column;
+        height: 90vh;
+        flex-flow: column-reverse;
+    
+        & .hero-texts{
+            flex-basis: 100%;
+            text-align: center;
+
+            & .hero-texts__name{
+                font-size: 4rem;
+            }
+
+            & .hero-texts__description{
+                font-size: 1rem;
+            }
+        }
+
+        & .contact-group-buttons{
+            justify-content: center;
+        }
+
+        & .photo-container{
+            /* margin-top: 2rem; */
+
+            & .photo-container__image{
+                width: 200px;
+                height: 300px;
+            }
+        }
+
+    }
+
+    
+    .projects-section{
+        padding-top: 2rem;
+
+        & .projects-section__title{
+            font-size: 2rem;
+        }
+
+        & .projects-section__subtitle{
+            font-size: 1rem;
+        }
+    }
+
+    .projects{
+        padding: 2rem 2rem;
+        grid-template-columns: repeat(auto-fill,minmax(300px,400px));
+    }
+
+    .project{
+        padding: 1rem;
+
+        & .project__title{
+            font-size: 1rem;
+        }
+
+        & .project__description{
+            font-size: 0.8rem;
+        }
+
+        & .tecnologies{
+            
+            & span{
+                font-size: 10px;
+            }
+        }
+
+        & .project__title, .project__description, .tecnologies{
+            transition: opacity 300ms ease;
+        }
+
+        
+    }
+  }
