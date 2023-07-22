@@ -33,11 +33,11 @@
 /* Variables */
 :root{
     --primary-color: #370665;
-    --secondary-color: #916bbf;
+    --secondary-color: #6C439E;
     --tertiary-color: #f3f1f5;
     --font-color: #272727;
     --bg-color: #fff;
-    --disabled-color: #807e81;
+    --disabled-color: #525153;
     --error-color: #f05454;
     --white:#fff;
     --border-radius:10px;
@@ -174,6 +174,11 @@ html{
     position: absolute;
     bottom: 0;
     animation: jumping-arrow 700ms infinite alternate;
+    font-size: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     & svg{
         width: 30px;
