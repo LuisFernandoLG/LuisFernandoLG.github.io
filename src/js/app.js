@@ -26,7 +26,7 @@ const projects = [
     {
         src: "./src/assets/images/projects/butterfly.webp",
         title: "Butterfly Music Program",
-        description: "Website developed for the Butterfly Music Program, a music school in the Cabo San Lucas.",
+        description: "Website developed for the Butterfly Music Program, a music school in Cabo San Lucas.",
         url: "https://butterflymusicprogram.com/",
         tecnologies: ["Wordpress", "JavaScript", "CSS"],
         color: "#673800",
