@@ -16,7 +16,7 @@ const projects = [
     {
         src: "./src/assets/images/projects/nativefloral.webp",
         title: "Native Floral",
-        description: "A business of a floral designer. This is the desgin of the website.",
+        description: "A business of a floral designer. This is the design of the website.",
         url: "https://luis.lopez.live",
         tecnologies: ["Wordpress", "Figma", "CSS"],
         color: "#676767",
