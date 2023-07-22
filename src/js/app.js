@@ -56,7 +56,7 @@ const projects = [
         src: "./src/assets/images/projects/planets.webp",
         title: "Planest Facts",
         description: "Web app developed for learning React and consuming an API.",
-        url: "https://app.netlify.com/sites/planet-factss/",
+        url: "https://planet-factss.netlify.app/",
         tecnologies: ["React", "Styledcomponents"],
         color: "#2E1A47",
     },
