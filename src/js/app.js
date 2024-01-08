@@ -83,7 +83,7 @@ const getprojectElement = ({ src, title, description, url, tecnologies, color, i
 
     return `
     <figure class="project ${inProcess ? "project-inprocess" : ''}" style="background-image: url('${src}'); background-size: contain; &::before: linear-gradient(transparent 0%, ${color} 100%);">
-    ${ inProcess ? '<span class="inprogress-chip"><img src="/src/assets/images/gear.webp" alt="gear icon"/> Work in Progress...</span>' : ''}
+    ${ inProcess ? '<span class="inprogress-chip"><img src="/src/assets/images/gear.webp" alt="gear icon"/> Work in Progress... 🛠️</span>' : ''}
     
     
     <div class="project__overlay" style="background: linear-gradient(transparent 0%, ${color} 100%);"></div>

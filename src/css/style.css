@@ -259,11 +259,18 @@ html{
         opacity: 0;
         transition: opacity 300ms ease;
     }
+
+    
     
     .inprogress-chip{
         position: absolute;
-        left: 1rem;
-        top: 1rem;
+        /* center */
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+
+
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -384,6 +391,12 @@ html{
     & .project__title, .project__description, .tecnologies{
         /* color: var(--bg-color); */
         opacity: 1;
+    }
+
+    & .inprogress-chip{
+        opacity: 0;
+        transition: opacity .3s ease alternate;
+    
     }
 
     
