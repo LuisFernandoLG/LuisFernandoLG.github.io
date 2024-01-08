@@ -23,6 +23,14 @@ const projects = [
         inProcess: true
     },
     {
+        src: "./src/assets/images/projects/pianistAlex.jpeg",
+        title: "Landing Page for a pianist",
+        description: "Landing page to promote the work of a pianist in Cabo San Lucas.",
+        url: "https://alexmacarthurmusic.com/",
+        tecnologies: ["HTML", "CSS", "JavaScript"],
+        color: "#000",
+    },
+    {
         src: "./src/assets/images/projects/gsp.webp",
         title: "GSP landing page",
         description: "Landing page developed for promoting the Green Scholarship Program.",
