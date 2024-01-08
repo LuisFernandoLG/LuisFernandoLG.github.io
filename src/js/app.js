@@ -22,15 +22,6 @@ const projects = [
         color: "#676767",
         inProcess: true
     },
-
-    {
-        src: "./src/assets/images/projects/butterfly.webp",
-        title: "Butterfly Music Program",
-        description: "Website developed for the Butterfly Music Program, a music school in Cabo San Lucas.",
-        url: "https://butterflymusicprogram.com/",
-        tecnologies: ["Wordpress", "JavaScript", "CSS"],
-        color: "#673800",
-    },
     {
         src: "./src/assets/images/projects/gsp.webp",
         title: "GSP landing page",
