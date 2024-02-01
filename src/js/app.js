@@ -4,32 +4,31 @@ window.addEventListener("DOMContentLoaded", () => {
 
 const projects = [
     {
-        src: "./src/assets/images/projects/practibus.webp",
-        title: "Practibus",
-        description: "Practibus is an ecosystem of apps for bus for SJC. Driver , user and admin app. This is the user app.",
-        url: "https://luis.lopez.live",
-        tecnologies: ["React native", "Firebase", "MongoDB", "NodeJs"],
+        src: "./src/assets/images/projects/home.webp",
+        title: "Adventure Time API",
+        description: "Adventure Time API is a RESTful API with Landing Page that provides data about the characters of the Adventure Time series.",
+        url: "https://adventure-time-api-docs.vercel.app/",
+        tecnologies: ["Laravel", "TailwindCSS", "MySQL", "Astro"],
         color: "#186B82",
-        inProcess: true
-    },
-    
-    {
-        src: "./src/assets/images/projects/nativefloral.webp",
-        title: "Native Floral",
-        description: "A business of a floral designer. This is the design of the website.",
-        url: "https://luis.lopez.live",
-        tecnologies: ["Wordpress", "Figma", "CSS"],
-        color: "#676767",
-        inProcess: true
     },
     {
         src: "./src/assets/images/projects/pianistAlex.jpeg",
         title: "Landing Page for a pianist",
         description: "Landing page to promote the work of a pianist in Cabo San Lucas.",
         url: "https://alexmacarthurmusic.com/",
-        tecnologies: ["HTML", "CSS", "JavaScript"],
+        tecnologies: ["NextJs", "CSS"],
         color: "#000",
     },
+    
+    {
+        src: "./src/assets/images/projects/butterfly.webp",
+        title: "Landing Page for Butterfly Music Program",
+        description: "Landing page es/en to promote the Butterfly Music Program in Cabo San Lucas.",
+        url: "https://butterflymusicprogram.com/",
+        tecnologies: ["NextJs", "CSS"],
+        color: "#000",
+    },
+
     {
         src: "./src/assets/images/projects/gsp.webp",
         title: "GSP landing page",
@@ -43,32 +42,11 @@ const projects = [
     {
         src: "./src/assets/images/projects/linkedList.webp",
         title: "Simple Linked List",
-        description: "Linked List app developed for the Data Structures course in order to learn how it workds.",
+        description: "Linked List app developed to see visually how a linked list works.",
         url: "https://lista-enlazada.netlify.app/",
         tecnologies: ["HTML", "CSS", "JavaScript"],
         color: "#272727",
     },
-
-    
-    
-    {
-        src: "./src/assets/images/projects/planets.webp",
-        title: "Planest Facts",
-        description: "Web app developed for learning React and consuming an API.",
-        url: "https://planet-factss.netlify.app/",
-        tecnologies: ["React", "Styledcomponents"],
-        color: "#2E1A47",
-    },
-
-    {
-        src: "./src/assets/images/projects/emoji.webp",
-        title: "Emoji app",
-        description: "Web app developed for learning React and animations.",
-        url: "https://admiring-kalam-5cd446.netlify.app/",
-        tecnologies: ["React", "Styledcomponents"],
-        color: "#000000",
-    }
-
 
 ]
 
