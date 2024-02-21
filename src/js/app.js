@@ -37,17 +37,6 @@ const projects = [
         tecnologies: ["HTML", "CSS", "JavaScript"],
         color: "#226742",
     },
-
-    
-    {
-        src: "./src/assets/images/projects/linkedList.webp",
-        title: "Simple Linked List",
-        description: "Linked List app developed to see visually how a linked list works.",
-        url: "https://lista-enlazada.netlify.app/",
-        tecnologies: ["HTML", "CSS", "JavaScript"],
-        color: "#272727",
-    },
-
 ]
 
 const $projects = document.querySelector(".projects");
