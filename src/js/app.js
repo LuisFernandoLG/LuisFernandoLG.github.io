@@ -4,6 +4,14 @@ window.addEventListener("DOMContentLoaded", () => {
 
 const projects = [
     {
+        src: "./src/assets/images/projects/my-attendance-list.png",
+        title: "My Attendance List",
+        description: "A QR code based attendance list for conferences or any other events.",
+        url: "https://attendance-list-next.vercel.app/",
+        tecnologies: ["Laravel", "TailwindCSS", "MySQL", "NextJs"],
+        color: "#FACC15",
+    },
+    {
         src: "./src/assets/images/projects/home.webp",
         title: "Adventure Time API",
         description: "Adventure Time API is a RESTful API with Landing Page that provides data about the characters of the Adventure Time series.",
@@ -21,12 +29,12 @@ const projects = [
     },
     
     {
-        src: "./src/assets/images/projects/butterfly.webp",
-        title: "Landing Page for Butterfly Music Program",
-        description: "Landing page es/en to promote the Butterfly Music Program in Cabo San Lucas.",
-        url: "https://butterflymusicprogram.com/",
-        tecnologies: ["NextJs", "CSS"],
-        color: "#000",
+        src: "./src/assets/images/projects/no-borders-academy.png",
+        title: "Landing Page for No Borders Academy",
+        description: "Landing page for Music Academy in Cabo San Lucas.",
+        url: "https://nobordersacademy.com/",
+        tecnologies: ["Astro", "TailwindCSS"],
+        color: "#1E40AF",
     },
 
     {
